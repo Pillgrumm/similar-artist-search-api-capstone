@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Bandwagon</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    
+</head>
+<body>
+    <section class="header">
+        <h1>Bandwagon</h1>
+    </section>
+
+    <section class="search-section">
+        <h2>Input an artist and we'll recommend six artists that are similar!</h2>
+        <form class="search-form">
+            <input type="text" name="query"/>
+            <button>Get Me Artists!</button>
+        </form>
+    </section>
+
+    <section class="recommendation">
+        <h3 class="artist-rec"></h3>
+    </section>
+
+    <section>
+        <h3 class="error-message">Oops! We couldn't find that artist! Try again>?</h3>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js" 
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
