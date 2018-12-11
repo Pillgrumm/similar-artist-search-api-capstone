@@ -1,5 +1,7 @@
 # BandWagon
 
+Live preview: https://pillgrumm.github.io/similar-artist-search-api-capstone/
+
 BandWagon will allow a user to find similar artists to the artist they input. Once the user receives the similar artist, they can click on the artists name and it will take them to the artists last.fm profile
 
 ## User Experience/Stories

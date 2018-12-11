@@ -6,28 +6,70 @@
     <title>Bandwagon</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
-    
+    <link rel="stylesheet" type="text/css" media="screen" href="float-grid.css"/>
+    <!--HI-->
 </head>
 <body>
     <section class="header">
-        <h1>Bandwagon</h1>
+        <img src="https://i.imgur.com/XR02WIn.jpg"/>
     </section>
 
     <section class="search-section">
         <h2>Input an artist and we'll recommend six artists that are similar!</h2>
         <form class="search-form">
-            <input type="text" name="query"/>
+            <input type="text" name="query" placeholder="CHON"/>
             <button>Get Me Artists!</button>
         </form>
     </section>
 
-    <section class="recommendation">
-        <h3 class="artist-rec"></h3>
-    </section>
+    <div class="row">
+      
+        <div class="col-4">
+            <div class="card">
+              <img class="card-image" src="https://lastfm-img2.akamaized.net/i/u/300x300/e6f575d4d779d39934127352753e52d9.png"/>
+              <h2><a href="https://www.last.fm/music/Polyphia" target="_blank">Polyphia</a></h2>
+          </div>
+        </div>
+  
+        <div class="col-4">
+          <div class="card">
+            <img class="card-image" src="https://lastfm-img2.akamaized.net/i/u/300x300/171b1dbf7af84a3eca89175d53b4948c.png"/>
+            <h2><a href="https://www.last.fm/music/Plini" target="_blank">Plini</a></h2>
+          </div>
+        </div>
+  
+        <div class="col-4">
+          <div class="card">
+            <img class="card-image" src="https://lastfm-img2.akamaized.net/i/u/300x300/7cdc673ef0a64b46cbc0be9082a859fa.png"/>
+            <h2><a href="https://www.last.fm/music/Intervals" target="_blank">Intervals</a></h2>
+          </div>
+        </div>
+  </div>
+  
+  <div class="row">
+  
+      <div class="col-4">
+        <div class="card">
+          <img class="card-image" src="https://lastfm-img2.akamaized.net/i/u/300x300/5ea3d24001502d11fbb083fe909721b2.png"/>
+          <h2><a href="https://www.last.fm/music/covet" target="_blank">CoVet</a></h2>
+        </div>
+      </div>
+  
+      <div class="col-4">
+        <div class="card">
+          <img class="card-image" src="https://lastfm-img2.akamaized.net/i/u/300x300/dd98f3e3783f4b14b692436b4953142d.png"/>
+          <h2><a href="https://www.last.fm/music/Strawberry+Girls" target="_blank">Strawberry Girls</a></h2>
+        </div>
+      </div>
+  
+      <div class="col-4">
+        <div class="card">
+          <img class="card-image" src="https://lastfm-img2.akamaized.net/i/u/300x300/7d3f40fc3a0728dc881fa297d12d6e8f.png"/>
+          <h2><a href="https://www.last.fm/music/sithu+aye" target="_blank">Sithu Aye</a></h2>
+        </div>
+      </div>
+  </div>
 
-    <section>
-        <h3 class="error-message">Oops! We couldn't find that artist! Try again>?</h3>
-    </section>
 
     <script src="https://code.jquery.com/jquery-3.3.1.js" 
     integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">

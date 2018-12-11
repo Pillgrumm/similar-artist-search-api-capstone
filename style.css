@@ -1,16 +1,73 @@
-body * {
-    box-sizing: border-box;
-}
-
-html {
-    height: 100%;
-}
-
 body {
-    font-family: Arial, Helvetica, sans-serif;
     text-align: center;
 }
-
-.error-message {
-    display:none;
+/*SUH*/
+.search-section{
+    border: 5px solid-black;
 }
+
+h1{
+    margin: 0;
+    padding: 0;
+    line-height: 1.2em;
+  }
+  
+  h2{
+    padding-left: 10px;
+  }
+  
+  
+  
+  .container {
+  padding-left: 60px;
+  padding-right: 60px;
+  width: 100%;
+  }
+  
+  nav {
+    height: 60px;
+    background-color: orange;
+    width: 100%;
+    position: fixed;
+  }
+  
+  .stc {
+    font-size: 150%;
+    position: fixed;
+  }
+  
+  .il{
+    display: inline-block;
+    margin-top: 5px;
+    position: fixed;
+    padding-top: 10px;
+  
+  }
+  main {
+    padding-top: 100px;
+  }
+  
+  main .row {
+    margin-bottom: 20px;
+  }
+  
+  .box {
+    height: 200px;
+    text-align: center;
+    padding-top: 30px;
+  }
+  
+  
+  
+  .card-image{
+    width: 100%;
+  }
+  
+  .card{
+    border: solid grey 1px;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  
