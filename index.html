@@ -17,14 +17,18 @@
     <section class="search-section">
         <h2>Input an artist and we'll recommend six artists that are similar!</h2>
         <form class="search-form">
-            <input type="text" name="query" placeholder="CHON"/>
+            <input type="text" name="query" placeholder="CHON" class="query"/>
             <button>Get Me Artists!</button>
         </form>
     </section>
 
-    <div class="row">
+    <section class="error-message">
+      <h2 class="hidden">Oops, we couldn't find that artist!</h2>
+    </section>
+
+    <div class="row js-results">
       
-        <div class="col-4">
+        <!-- <div class="col-4">
             <div class="card">
               <img class="card-image" src="https://lastfm-img2.akamaized.net/i/u/300x300/e6f575d4d779d39934127352753e52d9.png"/>
               <h2><a href="https://www.last.fm/music/Polyphia" target="_blank">Polyphia</a></h2>
@@ -43,10 +47,10 @@
             <img class="card-image" src="https://lastfm-img2.akamaized.net/i/u/300x300/7cdc673ef0a64b46cbc0be9082a859fa.png"/>
             <h2><a href="https://www.last.fm/music/Intervals" target="_blank">Intervals</a></h2>
           </div>
-        </div>
+        </div> -->
   </div>
   
-  <div class="row">
+  <!-- <div class="row">
   
       <div class="col-4">
         <div class="card">
@@ -68,7 +72,7 @@
           <h2><a href="https://www.last.fm/music/sithu+aye" target="_blank">Sithu Aye</a></h2>
         </div>
       </div>
-  </div>
+  </div> -->
 
 
     <script src="https://code.jquery.com/jquery-3.3.1.js" 

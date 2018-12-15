@@ -1,7 +1,11 @@
 body {
     text-align: center;
 }
-/*SUH*/
+
+.hidden{
+  display: none;
+}
+
 .search-section{
     border: 5px solid-black;
 }
