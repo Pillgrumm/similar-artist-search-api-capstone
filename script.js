@@ -28,7 +28,7 @@ function displayResults(responseJson) {
 //step 2 make the API call using input from the user.
 function getArtist(artistName){
     $.ajax({
-    url: `http://ws.audioscrobbler.com/2.0/?method=artist.getsimilar&artist=${artistName}&api_key=56b468ce8d5c4ebc18352083e99d65ef&format=json&limit=6`,
+    url: `https://ws.audioscrobbler.com/2.0/?method=artist.getsimilar&artist=${artistName}&api_key=56b468ce8d5c4ebc18352083e99d65ef&format=json&limit=6`,
     success: function(data) {
       console.log(data);
       //create if statement if the ajax call is a success, else we will throw an error
