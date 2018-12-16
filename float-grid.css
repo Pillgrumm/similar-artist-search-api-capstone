@@ -2,9 +2,7 @@
   box-sizing: border-box;
 }
 
-.header {
-  position: center;
-}
+
 
 .row {
   max-width: 1000px;

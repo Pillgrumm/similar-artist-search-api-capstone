@@ -32,8 +32,10 @@ function getArtist(artistName){
     success: function(data) {
       console.log(data);
       //create if statement if the ajax call is a success, else we will throw an error
-      if(data.similarartists.artist.length == 0){alert('No Results!')}
-      else{displayResults(data.similarartists.artist);}
+      if(data.similarartists.artist.length == 0){
+        alert('No Results!')}
+      else{
+        displayResults(data.similarartists.artist);}
     },
        error: function(XMLHttpRequest, textStatus, errorThrown) {
         console.log("Status: " , textStatus); 
