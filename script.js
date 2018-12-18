@@ -31,16 +31,23 @@ function getArtist(artistName){
     url: `https://ws.audioscrobbler.com/2.0/?method=artist.getsimilar&artist=${artistName}&api_key=56b468ce8d5c4ebc18352083e99d65ef&format=json&limit=6`,
     success: function(data) {
       console.log(data);
-      //create if statement if the ajax call is a success, else we will throw an error
-      if(data.similarartists.artist.length == 0){
-        alert('No Results!')}
+      //The API call succesful but there aren't any results!
+      if(data.message=="The artist you supplied could not be found"){
+        alert('No Results!')
+      }
+      else if(data.similarartists.artist.length == 0){
+        alert('No Results!')
+      }
       else{
-        displayResults(data.similarartists.artist);}
+        displayResults(data.similarartists.artist);
+      }
     },
+    //If server is too busy or the data we are sending/receiving has syntax errors.
        error: function(XMLHttpRequest, textStatus, errorThrown) {
         console.log("Status: " , textStatus); 
         console.log("Error: " , errorThrown);
-        console.log("Status: " , XMLHttpRequest); 
+        console.log("Status: " , XMLHttpRequest);
+        alert('There was server issue!'); 
       }
   })
   }
@@ -53,8 +60,13 @@ function handleFormSubmit(){
       event.preventDefault();
       const query = $('.query').val();
       console.log(query);
-      //If query is empty, display an error message.
-     getArtist(query);
+      //Validate user input.
+      if(query==""){
+        alert('Input artist')
+      }
+      else{
+        getArtist(query);
+      }
     })
     
   }
