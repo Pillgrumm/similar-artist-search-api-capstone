@@ -28,15 +28,21 @@ function displayResults(responseJson) {
 //step 2 make the API call using input from the user.
 function getArtist(artistName){
     $.ajax({
-    url: `https://ws.audioscrobbler.com/2.0/?method=artist.getsimilar&artist=${artistName}&api_key=56b468ce8d5c4ebc18352083e99d65ef&format=json&limit=6`,
+    url: `https://ws.audioscrobbler.com/3.0/?method=artist.getsimilar&artist=${artistName}&api_key=56b468ce8d5c4ebc18352083e99d65ef&format=json&limit=6`,
     success: function(data) {
       console.log(data);
       //The API call succesful but there aren't any results!
       if(data.message=="The artist you supplied could not be found"){
-        alert('No Results!')
+        $('.error-message').text(`Sorry! We couldn't find that artist, try another?`);
+        setTimeout(() =>{
+          $('.error-message').empty();
+        }, 3000);
       }
       else if(data.similarartists.artist.length == 0){
-        alert('No Results!')
+        $('.error-message').text(`Sorry! We couldn't find that artist, try another?`);
+        setTimeout(() =>{
+          $('.error-message').empty();
+        }, 3000);
       }
       else{
         displayResults(data.similarartists.artist);
@@ -47,7 +53,10 @@ function getArtist(artistName){
         console.log("Status: " , textStatus); 
         console.log("Error: " , errorThrown);
         console.log("Status: " , XMLHttpRequest);
-        alert('There was server issue!'); 
+        $('.error-message').text(`There was a communication error with the server.`);
+        setTimeout(() => {
+          $('.error-message').empty();
+        },3000); 
       }
   })
   }
