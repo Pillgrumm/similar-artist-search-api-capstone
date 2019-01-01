@@ -1,9 +1,5 @@
 'use strict'
 
-//const api_key = "56b468ce8d5c4ebc18352083e99d65ef";
-// url: 
-//http://ws.audioscrobbler.com/2.0/?method=artist.getsimilar&artist=chon&api_key=56b468ce8d5c4ebc18352083e99d65ef&format=json&limit=6
-
 /*Data Flow Between Functions
 
 Step One (handleFormSubmission) will call Step 2(getArtist), which will call Step 3(displayResults).

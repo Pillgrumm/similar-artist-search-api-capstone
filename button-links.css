@@ -39,12 +39,12 @@ button {
 
   a{
     display: block;
-    color: white;
+    color: #ddd;
     text-decoration: none;
     position: relative;
   }
   
-  a::after{
+  /*a::after{
     content: "";
     background: white;
       mix-blend-mode: exclusion;
@@ -55,7 +55,12 @@ button {
     left: -10px;
       transition: all .3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
   }
-  
+*/
+  a:hover {
+      color: white;
+  }
+/*
   a:hover::after{
       height: calc(100% + 8px)
   }
+  */
