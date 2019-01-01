@@ -67,7 +67,7 @@ function getArtist(artistName){
 function handleFormSubmit(){
     $('.search-form').submit(event => {
       event.preventDefault();
-      const query = $('.query').val();
+      const query = $.trim($('.query').val());
       console.log(query);
       //Validate user input.
       if(query==""){
