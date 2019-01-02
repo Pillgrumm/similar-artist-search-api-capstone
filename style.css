@@ -2,16 +2,20 @@
   box-sizing: border-box;
 }
 
-header {
-  margin-bottom: 40px;
-}
+
 
 body {
     font-family: 'Source Sans Pro', sans-serif;
     text-align: center;
+    background-color: #cc5e14;
+background-image: url("https://www.transparenttextures.com/patterns/black-thread.png");
 }
 
-
+p {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 100px;
+}
 
 h1{
     margin: 0;
@@ -74,7 +78,7 @@ h1{
   
   .card{
     border: solid grey 1px;
-    background-color: grey;
+    background-color: rgb(114, 3, 3);
     width: 100%;
     margin-top: 10px;
     margin-bottom: 10px;
