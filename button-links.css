@@ -8,7 +8,7 @@ Make the button a bit more excited to exist.
 button {
     color: #fff !important;
     /*background: #ed3330;*/
-    background: #434343;
+    background: rgba(20, 0, 90, 0.671);
     padding: 20px;
     border-radius: 5px;
     display: inline-block;
@@ -17,31 +17,32 @@ button {
 
     button:hover {
         /*background: #434343;*/
-        background: #ed3330;
+        background: #cc5e14;
         letter-spacing: 1px;
         -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
         -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
         box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
         transition: all 0.4s ease 0s;
+        cursor: pointer;
         }
 
 input {
-    color: #20bf6b !important;
+    color: #cc5e14 !important;
     background: #ffffff;
     padding: 20px;
-    border: 1px solid #20bf6b !important;
+    border: 1px solid #cc5e14 !important;
     border-radius: 6px;
     display: inline-block;
     }
 
     input:hover {
-        color: #494949 !important;
+        color: rgba(20, 0, 90, 0.671) !important;
         border-radius: 50px;
-        border-color: #494949 !important;
+        border-color: rgba(20, 0, 90, 0.671) !important;
         transition: all 0.3s ease 0s;
         }
 
-  a{
+  /*a{
     display: block;
     color: #ddd;
     text-decoration: none;
@@ -51,3 +52,20 @@ input {
   a:hover {
       color: white;
   }
+  */
+
+  a {
+    color: #fff !important;
+    background: #cc5e14;
+    padding: 20px;
+    border-radius: 50px;
+    display: inline-block;
+    border: none;
+    text-decoration: none;
+    }
+
+    a:hover {
+        text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+
+        transition: all 0.4s ease 0s;
+        }
