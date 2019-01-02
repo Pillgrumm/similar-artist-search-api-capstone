@@ -39,7 +39,9 @@ function displayResults(responseJson) {
           </div>
         `;
       }
-    $('.js-results').append(htmlOutput)}
+    $('.js-results').hide();
+    $('.js-results').append(htmlOutput).fadeIn(500);
+  }
   }
 
 
