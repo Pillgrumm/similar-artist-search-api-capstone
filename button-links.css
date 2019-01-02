@@ -26,7 +26,7 @@ button {
         cursor: pointer;
         }
 
-input {
+select,input {
     color: #cc5e14 !important;
     background: #ffffff;
     padding: 20px;
@@ -35,7 +35,7 @@ input {
     display: inline-block;
     }
 
-    input:hover {
+    select,input:hover {
         color: rgba(20, 0, 90, 0.671) !important;
         border-radius: 50px;
         border-color: rgba(20, 0, 90, 0.671) !important;
