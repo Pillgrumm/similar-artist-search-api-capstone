@@ -104,8 +104,8 @@ function handleFormSubmit(){
   //Step One: User will click the button on the landing page to get to the main page
 function startApp(){
   $('.landing-page').on('click', '.start-button', event =>{
-  $('.landing-page').addClass('hidden');
-  $('.main').removeClass('hidden');
+  $('.landing-page').fadeOut('slow');
+  $('.main').delay("slow").fadeIn('slow');
   });
 }
   
