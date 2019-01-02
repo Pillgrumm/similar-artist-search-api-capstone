@@ -5,7 +5,9 @@
 Step One (handleFormSubmission) will call Step 2(getArtist), which will call Step 3(displayResults).
 
 */
-// Step 3: Display data from the API call.
+// Step Four: Display data from the API call.
+
+
 function displayResults(responseJson) {
     console.log(responseJson)
     $('.js-results').empty();
@@ -41,7 +43,7 @@ function displayResults(responseJson) {
   }
 
 
-//step 2 make the API call using input from the user.
+//Step Three: Make the API call using input from the user.
 function getArtist(artistName, artistQuantity){
     $.ajax({
     url: `https://ws.audioscrobbler.com/2.0/?method=artist.getsimilar&artist=${artistName}&api_key=56b468ce8d5c4ebc18352083e99d65ef&format=json&limit=${artistQuantity}`,
@@ -78,14 +80,14 @@ function getArtist(artistName, artistQuantity){
   }
 
 
-//Step One: Take the input from the user.(Watch for submit)
+//Step Two: Take the input from the user.(Watch for submit)
 
 function handleFormSubmit(){
     $('.search-form').submit(event => {
       event.preventDefault();
       const query = $.trim($('.query').val());
       console.log(query);
-      const quantity = $(this).find('select').val();
+      const quantity = $('.select').val();
       console.log(quantity);
       //Validate user input.
       if(query==""){
@@ -98,5 +100,18 @@ function handleFormSubmit(){
     })
     
   }
+
+  //Step One: User will click the button on the landing page to get to the main page
+function startApp(){
+  $('.landing-page').on('click', '.start-button', event =>{
+  $('.landing-page').addClass('hidden');
+  $('.main').removeClass('hidden');
+  });
+}
   
-  $(handleFormSubmit);
+function handleFunctions(){
+  startApp();
+  handleFormSubmit();
+}
+  
+  $(handleFunctions);
