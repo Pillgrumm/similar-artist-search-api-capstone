@@ -89,3 +89,8 @@ h1{
   .hidden{
     display:none;
   }
+
+  .error-message{
+    color: red;
+    font-display: bold;
+  }
