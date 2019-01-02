@@ -9,6 +9,7 @@ body {
     text-align: center;
     background-color: #cc5e14;
 background-image: url("https://www.transparenttextures.com/patterns/black-thread.png");
+background-attachment: fixed;
 }
 
 p {
