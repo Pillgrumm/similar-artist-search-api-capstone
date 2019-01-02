@@ -9,15 +9,35 @@ Step One (handleFormSubmission) will call Step 2(getArtist), which will call Ste
 function displayResults(responseJson) {
     console.log(responseJson)
     $('.js-results').empty();
+    /* Create an empty html output variable*/
+    let htmlOutput = '';
     for(let i = 0; i < responseJson.length; i++) {
-    $('.js-results').append(`
-    <div class="col-4">
-            <div class="card">
-              <img class="card-image" src="${responseJson[i].image[3]['#text']}"/>
-              <h2><a href="${responseJson[i].url}" target="_blank">${responseJson[i].name}</a></h2>
+      /*if the image src is not empty...*/
+      if(responseJson[i].image[3]['#text'] !=""){
+        /*...Display the text */
+        htmlOutput = `
+        <div class="col-4">
+                <div class="card">
+                  <img class="card-image" src="${responseJson[i].image[3]['#text']}"/>
+                  <h2><a href="${responseJson[i].url}" target="_blank">${responseJson[i].name}</a></h2>
+              </div>
+            </div>
+          `;
+      }
+      /* If the img src is empty...*/
+      else{
+    /*...Display 'No Image' IMG */
+      
+      htmlOutput = `
+      <div class="col-4">
+              <div class="card">
+                <img class="card-image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/1024px-No_image_available.svg.png"/>
+                <h2><a href="${responseJson[i].url}" target="_blank">${responseJson[i].name}</a></h2>
+            </div>
           </div>
-        </div>
-      `)}
+        `;
+      }
+    $('.js-results').append(htmlOutput)}
   }
 
 
