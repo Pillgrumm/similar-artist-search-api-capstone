@@ -1,12 +1,13 @@
 'use strict'
 
 /*Data Flow Between Functions
-
-Step One (handleFormSubmission) will call Step 2(getArtist), which will call Step 3(displayResults).
-
+Step One(startApp): Function that takes the user to the next step. 
+Step Two(handleFormSubmission): will send information to the next step.
+Step Three(getArtist): Will send last.fm's API information to the next step.
+Step Four(displayResults): Will display the text/hypder/image received from previous step.
 */
-// Step Four: Display data from the API call.
 
+// Step Four: Display data from the API call.
 
 function displayResults(responseJson) {
     console.log(responseJson)
@@ -44,7 +45,6 @@ function displayResults(responseJson) {
   }
   }
 
-
 //Step Three: Make the API call using input from the user.
 function getArtist(artistName, artistQuantity){
     $.ajax({
@@ -81,7 +81,6 @@ function getArtist(artistName, artistQuantity){
   })
   }
 
-
 //Step Two: Take the input from the user.(Watch for submit)
 
 function handleFormSubmit(){
@@ -103,7 +102,8 @@ function handleFormSubmit(){
     
   }
 
-  //Step One: User will click the button on the landing page to get to the main page
+  //Step One: User will click the button on the landing page to get to the main page.
+
 function startApp(){
   $('.landing-page').on('click', '.start-button', event =>{
   $('.landing-page').fadeOut('slow');
