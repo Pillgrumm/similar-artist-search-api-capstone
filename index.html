@@ -13,10 +13,10 @@
 
 </head>
 <body>
-    <section class="header">
+    <header class="header" role="banner">
         <p>BandWagon</p>
-    </section>
-<section class="landing-page">
+    </header>
+<section class="landing-page" role ="region">
     <h2>Hey there, welcome to BandWagon!</h2>
     <h3>This is a simple application that suggests similar artists based on the artist you input.</h3>
     <h3>Click the button below to get started.</h3>
@@ -24,12 +24,12 @@
 
 </section>
 
-<section class="main hidden">
-    <section class="search-section">
+<main class="main hidden" role="main">
+    <section class="search-section" role="region">
         <h2>Input an artist and select the amount of results you would like to see.</h2>
 
         <form class="search-form">
-            <input type="text" name="query" placeholder="Post Malone" class="query" required/>
+            <input type="text" name="query" placeholder="Michael Jackson" class="query" required/>
             <select name="select" class="select">
                 <option value = "3">3</option>
                 <option value = "6">6</option>
@@ -71,12 +71,12 @@
 
 <br>
 
-    <section class="error-message">
+    <section class="error-message" role="region">
      
     </section>
-</section>
+</main>
 
-    <section class="row js-results">      
+    <section class="row js-results" role="region">      
        
     </section>
 
