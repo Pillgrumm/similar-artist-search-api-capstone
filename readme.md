@@ -4,6 +4,14 @@ Live preview: https://pillgrumm.github.io/similar-artist-search-api-capstone/
 
 BandWagon will allow a user to find similar artists to the artist they input. Once the user receives the similar artist, they can click on the artists name and it will take them to the artists last.fm profile
 
+## Screenshots
+
+![Landing Page](github-images/landing-page.jpg)
+![Search Page](github-images/search-page.jpg)
+![Results Page](github-images/results-page.jpg)
+![Image Unavailable](github-images/image-unavailable.jpg)
+![Error Page](github-images/error-page.jpg)
+
 ## User Experience/Stories
 
 **Landing Page**
@@ -40,3 +48,22 @@ As a user, if an error occurs, I would like to be notified.
 
 As a user, I will be able to simply input a new artist and receive results based on that artist.
 
+## Technical
+
+<h3>Technolgies used</h3>
+<ul>
+  <li>HTML5</li>
+  <li>CSS3</li>
+  <li>JavaScript</li>
+  <li>jQuery</li>
+  <li>Ajax</li>
+</ul>
+<h3>Responsive</h3>
+<ul>
+  <li>The app is responsive and optimized for both desktop and mobile viewing and use.</li>
+</ul>
+
+## Development Roadmap
+Features added
+* Added the ability for user to select several artists to display
+* Made the mobile responsiveness easier on the eyes.
