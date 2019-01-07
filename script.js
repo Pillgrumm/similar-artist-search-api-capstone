@@ -10,7 +10,6 @@ Step Four(displayResults): Will display the text/hypder/image received from prev
 // Step Four: Display data from the API call.
 
 function displayResults(responseJson) {
-    console.log(responseJson)
     $('.js-results').empty();
     /* Create an empty html output variable*/
     let htmlOutput = '';
@@ -50,7 +49,6 @@ function getArtist(artistName, artistQuantity){
     $.ajax({
     url: `https://ws.audioscrobbler.com/2.0/?method=artist.getsimilar&artist=${artistName}&api_key=56b468ce8d5c4ebc18352083e99d65ef&format=json&limit=${artistQuantity}`,
     success: function(data) {
-      console.log(data);
       //The API call succesful but there aren't any results!
       if(data.message=="The artist you supplied could not be found"){
         $('.error-message').text(`Sorry! We couldn't find that artist, try another?`);
@@ -87,9 +85,7 @@ function handleFormSubmit(){
     $('.search-form').submit(event => {
       event.preventDefault();
       const query = $.trim($('.query').val());
-      console.log(query);
       const quantity = $('.select').val();
-      console.log(quantity);
       //Validate user input.
       if(query==""){
         alert('Input artist')
