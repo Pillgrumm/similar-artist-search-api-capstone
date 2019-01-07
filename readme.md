@@ -9,7 +9,7 @@ BandWagon will allow a user to find similar artists to the artist they input. On
 ![Landing Page](github-images/landing-page.jpg)
 ![Search Page](github-images/search-page.jpg)
 ![Results Page](github-images/results-page.jpg)
-![Image Unavailable](github-images/image-unavailable.jpg)
+![Image Unavailable](github-images/image-unavailable1.jpg)
 ![Error Page](github-images/error-page.jpg)
 
 ## User Experience/Stories
