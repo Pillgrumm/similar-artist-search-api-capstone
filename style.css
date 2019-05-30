@@ -22,32 +22,33 @@ h1{
   margin: 0;
   padding: 0;
   line-height: 1.2em;
+    font-size: 15px;
 }
-  
+
 h2{
   padding-left: 10px;
   height: 90px;
   overflow: hidden;
-}  
-  
+}
+
 .container {
   padding-left: 60px;
   padding-right: 60px;
   width: 100%;
 }
-  
+
 nav {
   height: 60px;
   background-color: orange;
   width: 100%;
   position: fixed;
 }
-  
+
 .stc {
   font-size: 150%;
   position: fixed;
 }
-  
+
 .il{
   display: inline-block;
   margin-top: 5px;
@@ -58,21 +59,21 @@ nav {
 main {
   padding-top: 100px;
 }
-  
+
 main .row {
   margin-bottom: 20px;
 }
-  
+
 .box {
   height: 200px;
   text-align: center;
   padding-top: 30px;
 }
-    
+
 .card-image{
   width: 100%;
 }
-  
+
 .card{
   border: solid grey 1px;
   background-color: rgba(117, 117, 117, 0.671);
